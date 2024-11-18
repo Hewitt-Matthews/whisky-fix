@@ -2470,9 +2470,9 @@ body.archive.tax-product_cat.term-whiskies-of-the-world.term-43.logged-in.admin-
     background: rgb(0 0 0 / 30%);
 }
 
-.woocommerce-cart table.shop_table thead,
-.woocommerce-cart table.shop_table .product-remove {
-	display: none;
+/* Remove link color from remove button */
+.woocommerce a.remove {
+    color: #bd8951 !important;
 }
 
  .woocommerce-cart table.cart img{
