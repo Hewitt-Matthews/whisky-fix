@@ -4208,3 +4208,10 @@ div#sidebar {
 		flex-direction: column;
 	}
 }
+
+/* Fix button height for apply coupon button */
+.coupon button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

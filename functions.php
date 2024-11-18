@@ -1182,3 +1182,17 @@ function change_twitter_image($image) {
     return $image; 
   
 }; 
+
+// Replace quantity field with limit message if product is sold individually
+add_filter('woocommerce_cart_item_quantity', 'replace_quantity_with_limit_message', 10, 3);
+function replace_quantity_with_limit_message($product_quantity, $cart_item_key, $cart_item) {
+    $product = $cart_item['data'];
+    
+    if ($product && $product->is_sold_individually()) {
+        return '<div class="quantity-limit-message">
+            <span class="limit-text">Limited to 1 per order</span>
+        </div>';
+    }
+    
+    return $product_quantity;
+}
