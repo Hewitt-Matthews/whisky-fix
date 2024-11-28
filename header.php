@@ -6,7 +6,7 @@
 	   <link rel="icon" href="https://whiskyfix.com/wp-content/uploads/2021/04/whiskyfixfav.png">
       <title><?php wp_title('&raquo;','true','right'); ?><?php //bloginfo('name'); ?></title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"> 
-
+      <meta name="google-site-verification" content="C10LTx2LpkWa-uZ0E3pBijznWeSu_TaM5Orbs8X3NV0">
        <?php wp_head(); ?>   
    </head>
 	
